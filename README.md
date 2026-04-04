@@ -17,6 +17,7 @@
 
 - data_manager.py: Code lưu trữ dữ liệu.
 
+- scan_logs.txt: Lưu các case QR Code đã quét.
 3) Hướng dẫn - Lưu ý: 
 - Anh em nhớ tạo nhánh theo cú pháp name/feature-name trước khi code
 
