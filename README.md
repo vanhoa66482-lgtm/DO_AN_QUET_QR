@@ -1,27 +1,37 @@
-# DO_AN_QUET_QR
-# Tên dự án: Tạo ứng dụng nhận diện mã QR
+# 📷 ĐỒ ÁN: ỨNG DỤNG QUÉT VÀ QUẢN LÝ MÃ QR (Desktop App)
 
-1) Thành viên (Họ tên - MSSV):
-* Nguyễn Lê Phúc Thịnh - 25139047
-* Nguyễn Truy Phong - 25139031
-* Lê Nguyễn Văn Hòa - 25139013
-* Nguyễn Thanh Trí - 23119217
-* Nguyễn Gia Thiên Phúc - 25139034
+## 1. Thành viên nhóm 13 (Họ tên - MSSV)
+* **Nguyễn Lê Phúc Thịnh** - 25139047 *(Leader)*
+* **Nguyễn Truy Phong** - 25139031
+* **Lê Nguyễn Văn Hòa** - 25139013
+* **Nguyễn Thanh Trí** - 23119217
+* **Nguyễn Gia Thiên Phúc** - 25139034
 
-2) Cấu Trúc Thư Mục (Quy định chung)
-- main.py: File chạy chính.
+---
 
-- ui_manager.py: Code giao diện.
+## 2. Định hướng & Lộ trình phát triển
+Dự án là một **Desktop App** chạy trên hệ điều hành máy tính (sử dụng Webcam để quét). Tiến độ code được chia làm 2 giai đoạn:
 
-- qr_scanner.py: Code thuật toán.
+* 📍 **GIAI ĐOẠN 1 (Bắt buộc hoàn thành):**
+  * **Giao diện (UI/UX):** Xây dựng màn hình chính, nút điều hướng, cửa sổ cảnh báo, v.v.
+  * **Quét mã QR:** Tích hợp camera, xử lý quét thẳng và nghiêng nhẹ. *(Lưu ý: Quét góc nghiêng sâu là thử thách khó do giới hạn của Webcam, sẽ dùng làm phần nghiên cứu nâng cao).*
+  * **Quản lý dữ liệu:** Ghi nhận và xuất lịch sử quét ra file văn bản.
+* 🌟 **GIAI ĐOẠN 2 (Tính năng mở rộng):**
+  * **Tạo mã QR:** Bổ sung tính năng cá nhân hóa mã QR (đổi màu, chèn ảnh, tùy chỉnh kích thước) khi thời gian cho phép.
 
-- data_manager.py: Code lưu trữ dữ liệu.
+---
 
-- scan_logs.txt: Lưu các case QR Code đã quét.
-3) Hướng dẫn - Lưu ý: 
-- Anh em nhớ tạo nhánh theo cú pháp name/feature-name trước khi code
+## 3. Cấu trúc thư mục (Quy định chung)
+Hệ thống được chia thành các module độc lập để dễ quản lý:
+- `main.py` : File khởi chạy chính (gắn kết giao diện và các module).
+- `ui_manager.py` : Quản lý và xử lý giao diện người dùng.
+- `qr_scanner.py` : Chứa thuật toán camera, nhận diện và giải mã QR.
+- `data_manager.py` : Xử lý logic lưu trữ và đọc/ghi dữ liệu.
+- `scan_logs.txt` : File lưu trữ lịch sử các phiên quét QR.
 
-- Thư viện cần cài: opencv-python, pyzbar, tkinter, ...
+---
 
-- Link Google Drive: [[PRPY238164] - Tiểu luận Python - QR Code](https://drive.google.com/drive/folders/18oSkehrKZfj7nN2bt-9R4SEqQLHEXabb?usp=drive_link)
-
+## 4. Hướng dẫn & Lưu ý quan trọng
+* **Chuẩn Code PEP-8:** Khuyến khích anh em code tuân thủ chuẩn **PEP-8** của Python (dùng `snake_case` cho tên biến/hàm, comment rõ chức năng, cách dòng chuẩn chỉ). Điều này giúp code sạch, dễ đọc và dễ gộp (merge) mà không bị conflict.
+* **Thư viện yêu cầu:** Cài đặt các thư viện lõi bằng lệnh pip: `opencv-python`, `pyzbar`, `tkinter`...
+* **Tài nguyên dự án:** [Link Google Drive: [PRPY238164] - Tiểu luận Python - QR Code]([#](https://drive.google.com/drive/folders/18oSkehrKZfj7nN2bt-9R4SEqQLHEXabb?usp=drive_link))
