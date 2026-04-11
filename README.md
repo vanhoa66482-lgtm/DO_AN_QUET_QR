@@ -34,5 +34,8 @@ Hệ thống được chia thành các module độc lập để dễ quản lý
 ## 4. Hướng dẫn & Lưu ý quan trọng
 * **Chuẩn Code [PEP-8](https://codelearn.io/sharing/pep8-chuan-ket-noi-python-phan-1):** Khuyến khích anh em code tuân thủ chuẩn **PEP-8** của Python (dùng `snake_case` cho tên biến/hàm, comment rõ chức năng, cách dòng chuẩn chỉ). Điều này giúp code sạch, dễ đọc và dễ gộp (merge) mà không bị conflict.
 * **Trích dẫn mã nguồn (Quan trọng):** Nếu anh em tham khảo hoặc tái sử dụng thuật toán phức tạp từ GitHub hay các nguồn bên ngoài (như xử lý góc nghiêng, chèn ảnh...), phải comment link nguồn gốc ngay trên đoạn code đó (VD: `# Nguồn tham khảo logic: [Link]`).
-* **Thư viện yêu cầu:** Cài đặt các thư viện lõi bằng lệnh pip: `opencv-python`, `pyzbar`, `tkinter`...
+* **Thư viện yêu cầu:** Cài đặt toàn bộ thư viện bằng cách mở Terminal tại thư mục code và gõ lệnh: `pip install -r requirements.txt`.
+  * 🚨 **LỖI THƯỜNG GẶP (ĐỌC KỸ TRƯỚC KHI CODE):**     * Nếu cài xong thư viện `pyzbar` mà lúc chạy app bị văng lỗi đỏ: `FileNotFoundError: Could not find module 'libzbar-64.dll'`
+    * **Nguyên nhân:** Không phải do code sai, mà do máy tính Windows bị thiếu lõi C++.
+    * **Cách sửa:** Lên Google gõ tải và cài đặt phần mềm **Visual C++ Redistributable** của Microsoft vào máy là app sẽ chạy bình thường.
 * **Tài nguyên dự án:** Link Google Drive: [[PRPY238164] - Tiểu luận Python - QR Code](https://drive.google.com/drive/folders/18oSkehrKZfj7nN2bt-9R4SEqQLHEXabb?usp=drive_link)

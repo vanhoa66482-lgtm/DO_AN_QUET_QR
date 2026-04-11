@@ -1,0 +1,9 @@
+opencv-python
+customtkinter
+qrcode
+Pillow
+pyzbar
+
+#Mở rộng (nếu cần sẽ báo sau)
+# pywifi
+# comtypes
