@@ -2,7 +2,11 @@
 NHIỆM VỤ CỦA FILE DATA_MANAGER:
 1. Nhận dữ liệu từ qr_decoder.py sau khi quét thành công.
 2. Lấy thời gian hiện tại từ hệ thống.
-3. Ghi dữ liệu vào file 'scan_logs.txt' theo định dạng: [Thời gian] | [Nội dung]
+3. Ghi dữ liệu vào file 'scan_logs.txt' theo định dạng:
+    [STT]: Số thứ tự (1, 2, 3...)
+    [Thời gian]: Ngày giờ quét (VD: 11/04 10:00)
+    [Loại mã]: Phân loại xem nó là cái gì (VD: Website, WiFi, Văn bản, Thẻ liên hệ...)
+    [Nội dung]: Cục dữ liệu gốc quét được (VD: https://hcmute.edu.vn)
 4. Lưu ý: Dùng chế độ 'a' (append) để không làm mất dữ liệu cũ.
 """
 """

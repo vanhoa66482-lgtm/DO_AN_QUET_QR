@@ -3,7 +3,7 @@ customtkinter
 qrcode
 Pillow
 pyzbar
-
+qreader
 #Mở rộng (nếu cần sẽ báo sau)
 # pywifi
 # comtypes
