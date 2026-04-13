@@ -14,8 +14,3 @@ Những thư viện cần tham khảo: datetime, pathlib, csv, ...
 """
 import datetime
 LOG_FILE_PATH = "scan_logs.txt"
-def write_to_scan_logs(qr_content):
-    # Bước 1: Lấy thời gian (Day/Month/Year Hour:Minute)
-    # Bước 2: Mở file scan_logs.txt (encoding='utf-8')
-    # Bước 3: Ghi dòng mới vào cuối file
-    pass

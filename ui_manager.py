@@ -9,6 +9,3 @@ Lưu ý: Sử dụng hàm .after() của Tkinter để cập nhật frame hình 
 mà không làm treo giao diện (Not Responding).
 """
 
-"""
-Những thư viện cần tham khảo: tkinter, PIL (Pillow), tkinter.messagebox, ...
-"""
